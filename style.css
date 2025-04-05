@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.box {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.static-container1 {
+    background-color: blue;
+}
+
+.static {
+    background-color: aqua;
+}
+
+.relative-container2 {
+    background-color: #7fa0c0;
+}
+.relative {
+    position: relative;
+    background-color: palevioletred;
+    left: 20px; /* Menggeser elemen 20px ke kanan */
+    top: 10px;
+}
+
+.absolute-container3 {
+    background-color: yellow;
+    position: relative; 
+}
+
+.absolute {
+    position: absolute;
+    background-color: orange;
+    top: 150px; ; /* Menggeser elemen 20px dari atas elemen pembungkus */
+    left: 20px; /* Menggeser elemen 20px dari kiri elemen pembungkus */
+}
+
+.fixed-container4 {
+    margin-top: 120px;
+    background-color:aquamarine ;
+}
+
+.fixed {
+    position: fixed;
+    background-color: #d0f0d0;
+    bottom: 20px; /* agar terlihat*/
+    right: 20px; /* menambah posisi horizontal*/
+    padding: 10px;
+    
+}
+
+.sticky-container5{
+    background-color: plum ;
+}
+
+.sticky {
+    position: sticky;
+    background-color: #f0e0d0;
+    top: 10px; 
+    padding: 10px;
+}
+.relative{
+    border: 2px dashed blue;
+}

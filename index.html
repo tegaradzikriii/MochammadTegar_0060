@@ -1,44 +1,52 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Web Iwima</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <h1>Institut Widya Pratama</h1>
-    </header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li><a href="register/index.html">Register</a></li>
-      </ul>
-    </nav>
-    <main>
-      <ul>
-        <li>
-          <p>Fakultas Teknik Informasi</p>
-          <div>
-            <img src="images/fti.PNG" alt="Fakultas Teknik Informasi" />
-          </div>
-        </li>
-        <li><p>Fakultas Ekonomika Bisnis</p></li>
-        <div>
-          <img src="images/feb.PNG" alt="Fakultas Ekonomika Bisnis" />
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh CSS Position</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contoh Jenis-Jenis CSS Position</h1>
+
+        <div class="box static-container1">
+            <h2>Static Position</h2>
+            <p>Elemen ini menggunakan posisi statis, yang merupakan posisi default. Elemen akan ditempatkan sesuai dengan aliran dokumen.</p>
+            <div class="box static">
+            <p><strong>Contoh:</strong> Elemen ini tidak memiliki properti posisi yang ditentukan, sehingga akan mengikuti aliran normal.</p>
+            </div>
         </div>
-      </ul>
-      <p>Siap Menjadi Hebat?Buruan Gabung!</p>
-    </main>
-    <footer>
-      <div>
-        <img src="images/wa.png" alt="whatsapp" />
-        <span><a href="wa.me/685712345678">0857123645678</a></span>
-      </div>
-      <div>
-        <img src="images/ig.png" alt="instagram" />
-        <span><a href="www.instagram.com/iwima.official">iwima.official</a></span>
-      </div>
-    </footer>
-  </body>
+
+        <div class="box relative-container2">
+            <h2>Relative Position</h2>
+            <p>Elemen ini menggunakan posisi relatif. Posisi elemen ini relatif terhadap posisi aslinya.</p>
+            <div class="box relative">
+                <p><strong>Contoh:</strong> Elemen ini dapat digeser dari posisi aslinya menggunakan properti <code>top</code>, <code>right</code>, <code>bottom</code>, dan <code>left</code>.</p>
+            </div>
+        </div>
+
+        <div class="box absolute-container3">
+            <h2>Absolute Position</h2>
+            <p>Elemen ini menggunakan posisi absolut. Elemen ini diposisikan relatif terhadap elemen terdekat yang memiliki posisi selain static.</p>
+            <div class="box absolute"><p><strong>Contoh:</strong> Jika tidak ada elemen yang diposisikan, elemen ini akan diposisikan relatif terhadap viewport.</p></div>
+        </div>
+
+        <div class="box fixed-container4">
+            <h2>Fixed Position</h2>
+            <p>Elemen ini menggunakan posisi tetap. Elemen ini diposisikan relatif terhadap viewport dan tidak akan bergerak saat halaman digulir.</p>
+            <div class="box fixed">
+                <p><strong>Contoh:</strong> Elemen ini tetap terlihat di layar meskipun pengguna menggulir halaman.</p>
+            </div>
+        </div>
+
+        <div class="box sticky-container5">
+            <h2>Sticky Position</h2>
+            <p>Elemen ini menggunakan posisi lengket. Elemen ini berperilaku seperti posisi relatif hingga mencapai batas tertentu, kemudian berperilaku seperti posisi tetap.</p>
+            <div class="box sticky">
+                <p><strong>Contoh:</strong> Elemen ini akan tetap di tempat saat pengguna menggulir halaman hingga mencapai batas yang ditentukan.</p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
